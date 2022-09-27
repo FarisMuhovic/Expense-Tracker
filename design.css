@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-image: url('https://www.notionwizard.com/wp-content/uploads/2021/01/income-and-expenses-illustration.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-color: black;
+
+}
+body h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 1000;
+  font-size: 36px;
+  position: relative;
+  padding: 5px;
+}
+body h2::before {
+  content: "";
+  width: 80%;
+  height: 3px;
+  background-color: rgb(47, 231, 255);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  animation: slide 1s;
+  -webkit-animation: slide 4s;
+}
+@keyframes slide {
+  from {width: 0;}
+  to {
+    width: 75%;
+  }
+}
+.header {
+  background-color: rgba(44, 79, 155, 0.904);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+body p {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+}
+#date {
+  color: rgb(47, 231, 255);
+  font-weight: 1000;
+}
+.money {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+.money p {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.additems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 100%;
+  padding: 40px;
+}
+.additems p {
+  padding: 10px;
+}
+.inputsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+.inputsection input , button{
+  border: none;
+  outline: none;
+  width: 25%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 15px;
+}
+input {
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  height: 25px;
+  color: white;
+  text-align: center;
+}
+input::placeholder {
+  text-align: center;
+}
+#item-name {
+  width: 50%;
+}
+table {
+  width: 75%;
+  margin: 50px 0;
+}
+td {
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 30px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  background-color:rgba(44, 79, 155);
+}
+#maintablerow td {
+  color: aqua;
+  font-size: 25px;
+  font-weight: 1000;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#pricespent {
+  width: 30%;
+}
+@media (max-width: 600px) {
+  .wrapper {
+    width: 88%;
+  }
+}

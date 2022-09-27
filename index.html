@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Expense Tracker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design.css">
+    <script src="script.js" async defer></script>
+  </head>
+  <body>
+    <div class="header">
+        <h2>Expense Tracker</h2>
+        <p>Track and manage your expenses with our app</p>
+        <p id="date"></p>
+      <div class="additems">
+        <p>Add a Transaction</p>
+        <div class="inputsection">
+          <input type="date" id="dayofdate">
+          <input type="text" id="item-name" placeholder="Transaction Name" required>
+          <input type="number" placeholder="Price" required id="price">
+          <button id="add-btn">Add</button>
+        </div>
+      </div>
+        <table id="maintable">
+          <tr id="maintablerow">
+            <td>Date</td>
+            <td>Transaction</td>
+            <td id="pricespent">Price<span> /// Spent: <span id="spent"></span></span></td>
+          </tr>                 
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
